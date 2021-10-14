@@ -1,18 +1,31 @@
-img {
+/* The next set of instructions float all things tagged as <img> to the right. Probably should be managed inline with each image instead  */
+    
+    img {
         float:right;
     }
 
-    h1 {
+/* The next set of instructions determines the font-family and color of the heading and subheading text throughout the site*/
+    
+    h1, h2, h3 {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: rgb(88, 13, 85);
-        font-size:45px;
+        color: darkslategrey;
     }
 
-    p {
+/* The next set of instructions ensures the same font type and font size for all paragraph and list text  */
+   
+    p, ol, ul {
         font-size: 1.20em;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
 
+/* The next set of instructions determines the amount of spacing between lines of all paragraph text */
+
+    p {
+        line-height: 1.5em;
+    }
+
+/* The next set of instructions creates a div suitable for Pull Quote content */
+    
     #pullQuote {
         width: 30%;
         border-left-color: brown;
@@ -22,14 +35,75 @@ img {
         font-size: 30px;
         margin-left: 10px;
         padding-left: 10px;
+        color: darkslategrey;
     }
+/* The next set of instructions creates an empty box so that a decent margin will appear around all the body content */
 
     #container {
         margin-left: 20%;
         margin-right: 20%;
     }
 
+    #banner {
+        background-color: lightgrey;
+        width: 100%;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+/*  The next sets of instructions creates a box for the site's navigation and footer, respectively*/
+    
     #nav {
+        background-color: darkslategrey;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size:smaller;
+        font-size: 1.1em;
+        padding-right: 20%;
+        padding-left: 20%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        color:whitesmoke;    
+    }
+
+    #footer {
+        background-color: darkslategrey;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.1em;
+        padding-right: 20%;
+        padding-left: 20%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        color:whitesmoke;
+        text-align: right;
+    }
+
+/* The next sets of instructions styles the linked text in the body, nav, and footer, respectively.  */
+   
+    a:link, a:active, a:visited {
+        color: darkslategrey;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: purple;
+    }
+
+    #nav a:link, a:active, a:visited {
+        color:white;
+        text-decoration: none;
+    }
+
+    #nav a:hover {
+        color: gray;
+    }
+
+    #footer a:link, a:active, a:visited {
+        color:white;
+        text-decoration: none;
+        text-align: right;
+    }
+
+    #footer a:hover {
+        color: gray;
     }
